@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bentoweymouth.mickeyhli.bentodeviceorder" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GetMenu"
+            android:permission="android.permission.INTERNET" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.bentoweymouth.mickeyhli.bentodeviceorder.MainMenu" />
+        </activity>
+        <activity
+            android:name=".DisplayMenu"
+            android:label="@string/title_activity_display_menu"
+            android:parentActivityName=".GetMenu"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bentoweymouth.mickeyhli.bentodeviceorder.GetMenu" />
+        </activity>
+        <activity
+            android:name=".DisplayMenuSection"
+            android:label="@string/title_activity_display_menu_section"
+            android:parentActivityName=".DisplayMenu"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bentoweymouth.mickeyhli.bentodeviceorder.DisplayMenu" />
+        </activity>
+    </application>
+
+</manifest>

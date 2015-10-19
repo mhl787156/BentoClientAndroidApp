@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bento Waiter Order Device</string>
+    <string name="action_settings">Settings</string>
+    <string name="Get_Order">Retrieve Order</string>
+    <string name="New_Order">Create New Order</string>
+    <string name="GetMenuButton">Get Menu</string>
+    <string name="Get_Menu">Retrieve Menu</string>
+    <string name="Choose_menu_text">Choose your Menu</string>
+    <string name="title_activity_display_menu">DisplayMenu</string>
+    <string name="Menu_name">MenuName</string>
+    <string name="title_activity_get_men">GetMen</string>
+    <string name="title_activity_display_menu_section">DisplayMenuSection
+    </string>
+    <string name="Menu_section_title">MenuSectionTitle</string>
+    <string name="Menu_Item_title">Menu_Item_TItle</string>
+</resources>
